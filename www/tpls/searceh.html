@@ -1,1 +1,39 @@
-<div>找漫画</div>
+<div class="search-view" ng-controller="searcehController">
+	<div class="search-input bar bar-header">
+		<div class="search-input-1">
+			<input type="text"  placeholder="输入漫画名或作者名" />
+			<button><i class="icon icon-left ion-ios-search"></i><i>搜索</i></button>
+		</div>
+	</div>
+	<ion-content class="has-header padding-horizontal">
+		<div class="search-hot-list">
+			<h2>大家都在搜</h2>
+			<p>
+				<a>钻石王牌</a><a>赌博默示录</a><a>一拳超人</a><a>伪恋</a>
+				<a>粗点心战争</a><a>servamp</a><a>文豪野犬</a><a>妖精的尾巴</a>
+				<a>后街女孩</a><a>恋人是人外</a>
+			</p>
+		</div>
+		<div class="content-hot-list">
+			<h2>热门分类</h2>
+			<ul class="row" ng-repeat="list in searchlist">
+				<li class="col">
+					<img ng-src="{{list[0].src}}"/>
+					<p>{{list[0].title}}</p>
+				</li>
+				<li class="col">
+					<img ng-src="{{list[1].src}}"/>
+					<p>{{list[1].title}}</p>
+				</li>
+				<li class="col">
+					<img ng-src="{{list[2].src}}"/>
+					<p>{{list[2].title}}</p>
+				</li>
+			</ul>
+		</div>
+	</ion-content>
+	
+	
+	
+	
+</div>
