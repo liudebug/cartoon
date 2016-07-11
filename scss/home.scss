@@ -1,0 +1,38 @@
+/*------------home页-------------*/
+.home-view{
+	ion-content{
+		.home-banner{
+			margin-bottom:10px;
+			img{
+				width:100%;
+			}
+		}
+		.qianxian{
+			margin-bottom:10px;
+			> div{
+				color:#f66;
+				line-height:100%;
+				h2{
+					color:#f66;
+				}
+
+			}
+			> ul{
+				> li{
+					img{
+						width:100%
+					}
+					p{
+					    font-size: 14px;
+					    color: #333;
+					}
+					b{
+						font-weight: 100;
+						color:#aaa;
+					}
+
+				}
+			}
+		}
+	}
+}

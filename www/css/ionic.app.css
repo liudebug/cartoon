@@ -9891,5 +9891,27 @@ a.button {
 .content-hot-list ul li img {
   width: 100%; }
 
+/*------------home页-------------*/
+.home-view ion-content .home-banner {
+  margin-bottom: 10px; }
+  .home-view ion-content .home-banner img {
+    width: 100%; }
+
+.home-view ion-content .qianxian {
+  margin-bottom: 10px; }
+  .home-view ion-content .qianxian > div {
+    color: #f66;
+    line-height: 100%; }
+    .home-view ion-content .qianxian > div h2 {
+      color: #f66; }
+  .home-view ion-content .qianxian > ul > li img {
+    width: 100%; }
+  .home-view ion-content .qianxian > ul > li p {
+    font-size: 14px;
+    color: #333; }
+  .home-view ion-content .qianxian > ul > li b {
+    font-weight: 100;
+    color: #aaa; }
+
 .tab-item-active {
   color: red; }
