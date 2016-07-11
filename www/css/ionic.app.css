@@ -9913,5 +9913,22 @@ a.button {
     font-weight: 100;
     color: #aaa; }
 
+.bold {
+  font-weight: bold !important; }
+
+.circle-angle {
+  border-radius: 50%; }
+
+.bg {
+  background: #eeeeee !important; }
+
+/*.img1{
+  display: block!important;
+  width: 65px!important;
+  height: 65px!important;
+}*/
+.contentBottom {
+  bottom: 0 !important; }
+
 .tab-item-active {
   color: red; }
