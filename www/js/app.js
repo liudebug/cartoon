@@ -23,19 +23,19 @@ angular.module('starter', ['ionic','starter.shell','starter.home','starter.day',
   });
 })
 .config(function ($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
-    $ionicConfigProvider.platform.ios.tabs.style('standard');   
-    $ionicConfigProvider.platform.ios.tabs.position('bottom');  
-    $ionicConfigProvider.platform.android.tabs.style('standard');  
-    $ionicConfigProvider.platform.android.tabs.position('standard');  
+    $ionicConfigProvider.platform.ios.tabs.style('standard');
+    $ionicConfigProvider.platform.ios.tabs.position('bottom');
+    $ionicConfigProvider.platform.android.tabs.style('standard');
+    $ionicConfigProvider.platform.android.tabs.position('standard');
 
-    $ionicConfigProvider.platform.ios.navBar.alignTitle('center');   
-    $ionicConfigProvider.platform.android.navBar.alignTitle('left');  
+    $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
+    $ionicConfigProvider.platform.android.navBar.alignTitle('left');
 
-    $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');  
-    $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');          
+    $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');
+    $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');
 
-    $ionicConfigProvider.platform.ios.views.transition('ios');   
-    $ionicConfigProvider.platform.android.views.transition('android');  
+    $ionicConfigProvider.platform.ios.views.transition('ios');
+    $ionicConfigProvider.platform.android.views.transition('android');
     $stateProvider
     .state('shell', {
       url: '/tab',
@@ -72,6 +72,15 @@ angular.module('starter', ['ionic','starter.shell','starter.home','starter.day',
       views: {
         'my-tab': {
           templateUrl: './tpls/my.html'
+        }
+      }
+    })
+    .state('shell.my-log', {
+      url: '/my-log',
+      views: {
+        'log-tab': {
+          templateUrl: './tpls/my-log.html'
+
         }
       }
     });
